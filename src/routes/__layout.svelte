@@ -17,7 +17,6 @@
     display: grid;
     grid-template-columns: 1fr;
     background: linear-gradient(to top right, rgb(249, 250, 245), rgb(251, 251, 250));
-    height: 100%;
   }
 
   main {
