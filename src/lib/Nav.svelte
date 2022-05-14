@@ -30,7 +30,7 @@
   }
 
   header > * {
-    width: calc(100% - 2 * var(--padding) - 2 * var(--border-width));
+    width: calc(100% - 2 * var(--border-width));
   }
 
   #title-container {
@@ -42,13 +42,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 0;
+    gap: 0.5rem;
 
     background-color: #DDD;
   }
 
   h1 {
-    margin: 0.5rem;
+    margin-block: 0.5rem;
   }
 
   nav {
