@@ -1,22 +1,24 @@
 <script lang="ts">
   import Nav from "$lib/Nav.svelte";
   import "../global.css";
+  import "../theme.css"
 </script>
 
-<div id="container">
+<div id="container" class="theme-ayu-light theme-shared-typography">
   <Nav />
   <main>
     <slot />
   </main>
+  <footer></footer>
 </div>
 
-<footer />
 
 <style>
   #container {
     display: grid;
     grid-template-columns: 1fr;
-    background: linear-gradient(to top right, rgb(249, 250, 245), rgb(251, 251, 250));
+    background: var(--bg-main);
+    font-family: var(--font-body);
   }
 
   main {
@@ -28,5 +30,10 @@
     #container {
       grid-template-columns: minmax(200px, 300px) auto;
     }
+  }
+
+  footer {
+    border-top: 4px solid var(--accent);
+    height: 0;
   }
 </style>

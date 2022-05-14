@@ -3,8 +3,8 @@
 </script>
 
 <svelte:head>
-  <title>Blog for Marca</title>
-  <meta name="description" content="Blog for Marca" />
+  <title>Naming Things</title>
+  <meta name="description" content="Naming things is hard: a blog about software engineering" />
 </svelte:head>
 
 <Page />

@@ -1,0 +1,24 @@
+.theme-shared-typography {
+    --font-title: "Fira Sans", sans-serif;
+    --font-body: "Playfair Display", serif;
+}
+
+.theme-ayu-light {
+    --bg-main: #FCFCFC;
+    --fg-main: #5C6166;
+    --line: rgba(138, 145, 153, 0.1);
+    --entity: #399EE6;
+    --accent: #FFAA33;
+    --string: #86B300;
+    --selection: rgba(3, 91, 214, 0.15);
+}
+
+.theme-ayu-mirage {
+    --bg-main: #242936;
+    --fg-main: #CCCAC2;
+    --line: #1A1F29;
+    --entity: #73D0FF;
+    --accent: #FFCC66;
+    --string: #D5FF80;
+    --selection: rgba(64, 159, 255, 0.25);
+}

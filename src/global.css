@@ -4,6 +4,11 @@ html {
 
 body {
   margin: 0;
-  font-family: "Merriweather", serif;
   height: 100%;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  font-weight: 500;
 }

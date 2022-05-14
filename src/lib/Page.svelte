@@ -1,4 +1,4 @@
-<h1>Just because you like it doesn't mean it's good for you</h1>
+<h2>Just because you like it doesn't mean it's good for you</h2>
 
 <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo nisl ac pellentesque sagittis. Suspendisse
@@ -38,8 +38,8 @@
 </p>
 
 <style>
-  h1 {
-    margin-top: 0;
+  h2 {
+    color: var(--entity);
   }
 
   p {
