@@ -16,6 +16,7 @@
 <style>
   #container {
     display: grid;
+    width: 100%;
     grid-template-columns: 1fr;
     background: var(--bg-main);
     font-family: var(--font-body);

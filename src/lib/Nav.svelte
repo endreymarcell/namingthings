@@ -2,53 +2,64 @@
   import "../global.css";
 </script>
 
-<div id="sticky-heading">
-  <h1>Naming Things is Hard</h1>
+<div id="header-container">
+  <header>
+    <div id="title-container">
+      <h1>Naming Things is Hard</h1>
+    </div>
+    <nav>
+      <div>
+        <a href="/">Home</a>
+      </div>
+      <div>
+        <a href="/">About</a>
+      </div>
+    </nav>
+  </header>
 </div>
-<nav>
-  <div id="links">
-    <div>
-      <a href="/">Home</a>
-    </div>
-    <div>
-      <a href="/">About</a>
-    </div>
-  </div>
-</nav>
 
 <style>
-  #sticky-heading {
-    text-align: center;
-    position: fixed;
-    width: calc(100% - 8px);
-    background-color: #DDDDDD;
+  * {
+    --padding: 8px;
+    --border-width: 4px;
+  }
+
+  #header-container {
+    width: calc(100% - 2 * var(--padding));
+    padding: var(--padding);
+  }
+
+  header > * {
+    width: calc(100% - 2 * var(--padding) - 2 * var(--border-width));
+  }
+
+  #title-container {
+    border-width: var(--border-width);
+    border-bottom-width: 0;
     border-style: solid;
     border-color: black;
-    border-width: 4px 4px 0 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DDD;
   }
 
   h1 {
-    font-family: var(--font-title);
-    text-transform: uppercase;
-    line-height: 1.1rem;
-    font-weight: 300;
+    margin: 0.5rem;
   }
 
   nav {
-    margin-top: 3.8rem;
+    height: 2rem;
     text-align: center;
     border-color: var(--accent);
     border-width: 0 4px 4px 4px;
     border-style: solid;
     font-family: var(--font-title);
     text-transform: uppercase;
-  }
-
-  #links {
     display: flex;
-    gap: 1rem;
     justify-content: center;
-    margin-block: 1rem;
+    align-items: center;
+    gap: 2rem;
   }
 
   @media screen and (min-width: 600px) {

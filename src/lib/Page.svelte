@@ -39,7 +39,10 @@
 
 <style>
   h2 {
-    color: var(--entity);
+    text-decoration: underline;
+    text-decoration-color: var(--entity);
+    text-decoration-thickness: 6px;
+    text-underline-offset: 6px;
   }
 
   p {
