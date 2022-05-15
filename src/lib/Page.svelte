@@ -1,5 +1,14 @@
 <h2>Just because you like it doesn't mean it's good for you</h2>
 
+<section class="meta">
+  <img class="avatar" alt="Marca" src="/img/profile.png" />
+  <span>
+    <a href="https://twitter.com/matthew_d_green">Marca</a>
+    <span>at</span>
+    <time datetime="2022-05-15">2022-05-15</time>
+  </span>
+</section>
+
 <p>
   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo nisl ac pellentesque sagittis. Suspendisse
   dictum feugiat nunc, at posuere augue tincidunt eget. Suspendisse neque metus, faucibus eu lacus sed, laoreet feugiat
@@ -43,6 +52,31 @@
     text-decoration-color: var(--entity);
     text-decoration-thickness: 6px;
     text-underline-offset: 6px;
+    margin-bottom: 0;
+  }
+
+  .meta {
+    font-family: var(--font-sans);
+    font-size: 0.9rem;
+    font-style: italic;
+    color: var(--text-muted);
+    font-weight: 300;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    margin-block: 1rem;
+    gap: 0.5rem;
+  }
+
+  .meta a {
+    font-weight: 300;
+    font-style: initial;
+  }
+
+  img.avatar {
+    width: 20px;
+    height: auto;
+    border-radius: 2px;
   }
 
   p {
