@@ -36,9 +36,19 @@ function getExcerpt(content: any) {
   };
 }
 
+function getContent(content: any) {
+  const documentContent = content.content;
+  const contentWithoutHr = documentContent.filter((node: any) => node.nodeType !== "hr");
+  return {
+    nodeType: "document",
+    content: contentWithoutHr,
+  };
+}
+
 export async function getFeed(): Promise<FeedEntry[]> {
   const entries = await client.getEntries();
-  return entries.items.map((item) => ({
+  const feedEntries = entries.items.filter((item) => !item.fields.isPinned);
+  return feedEntries.map((item) => ({
     title: item.fields.title,
     slug: item.fields.slug,
     excerpt: getExcerpt(item.fields.content),
@@ -54,7 +64,7 @@ export async function getEntryBySlug(slug: string) {
     createdAt: entry.sys.createdAt,
     updatedAt: entry.sys.updatedAt,
     title: entry.fields.title,
-    content: entry.fields.content,
+    content: getContent(entry.fields.content),
     isPinned: entry.fields.isPinned,
   };
   return article;
