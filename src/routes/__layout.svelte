@@ -1,23 +1,28 @@
 <script lang="ts">
   import Nav from "$lib/Nav.svelte";
   import "../global.css";
-  import "../theme.css"
+  import "../theme.css";
 </script>
+
+<svelte:head>
+  <title>Naming Things</title>
+  <meta name="description" content="Naming things is hard: a blog about software engineering" />
+</svelte:head>
 
 <div id="container" class="theme-ayu-light theme-shared-typography">
   <Nav />
   <main>
     <slot />
   </main>
-  <footer></footer>
+  <footer />
 </div>
-
 
 <style>
   #container {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    grid-template-columns: 1fr;
+    height: 100%;
     background: var(--bg-main);
     font-family: var(--font-body);
   }
@@ -27,14 +32,18 @@
     max-width: 700px;
   }
 
-  @media screen and (min-width: 600px) {
-    #container {
-      grid-template-columns: minmax(200px, 300px) auto;
-    }
-  }
-
   footer {
     border-top: 4px solid var(--accent);
     height: 0;
+  }
+
+  @media screen and (min-width: 600px) {
+    #container {
+      flex-direction: row;
+    }
+
+    footer {
+      border: 0;
+    }
   }
 </style>

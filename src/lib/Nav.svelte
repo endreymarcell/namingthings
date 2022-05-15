@@ -5,14 +5,16 @@
 <div id="header-container">
   <header>
     <div id="title-container">
-      <h1>Naming</h1><h1>Things</h1><h1>is Hard</h1>
+      <h1>Naming</h1>
+      <h1>Things</h1>
+      <h1>is Hard</h1>
     </div>
     <nav>
       <div>
         <a href="/">Home</a>
       </div>
       <div>
-        <a href="/">About</a>
+        <a href="/about">About</a>
       </div>
     </nav>
   </header>
@@ -26,6 +28,7 @@
 
   #header-container {
     width: calc(100% - 2 * var(--padding));
+    max-width: 300px;
     padding: var(--padding);
   }
 
@@ -44,7 +47,7 @@
     align-items: center;
     gap: 0.5rem;
 
-    background-color: #DDD;
+    background-color: #ddd;
   }
 
   h1 {
