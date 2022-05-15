@@ -30,7 +30,7 @@
   Phasellus in pharetra tortor.
 </p>
 
-<p>SvelteKit is a framework for building extremely high-performance web apps.</p>
+<p class="emphasis">SvelteKit is a framework for building extremely high-performance web apps.</p>
 
 <p>
   Building an app with all the modern best practices is fiendishly complicated. Those practices include build
@@ -85,5 +85,11 @@
 
   p + p {
     margin-top: 2rem;
+  }
+
+  p.emphasis {
+    margin-inline: 2rem;
+    font-size: 1.2rem;
+    color: var(--entity);
   }
 </style>
