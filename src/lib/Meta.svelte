@@ -1,9 +1,13 @@
+<script lang="ts">
+  export let publishDate: string;
+</script>
+
 <section class="meta">
   <img class="avatar" alt="Marca" src="/img/profile-xs.png" />
   <span>
     <a href="https://twitter.com/matthew_d_green">Marca</a>
     <span>at</span>
-    <time datetime="2022-05-15">2022-05-15</time>
+    <time datetime="2022-05-15">{publishDate}</time>
   </span>
 </section>
 

@@ -1,10 +1,10 @@
 <script lang="ts">
+  import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
+  import type { FeedEntry } from "$lib/content";
+
   import Meta from "$lib/Meta.svelte";
 
-  const pages = [
-    { title: "Just because you like it doesn't mean it's good for you", slug: "good-for-you" },
-    { title: "Better git command names", slug: "git-alias" },
-  ];
+  export let feed: FeedEntry[] = [];
 </script>
 
 <main>
@@ -13,14 +13,10 @@
     <span class="author">Marcell Endrey.</span> Read more <a href="/about">here</a>.
   </div>
   <div id="articles">
-    {#each pages as { title, slug }}
+    {#each feed as { title, slug, publishDate, excerpt }}
       <a href={`/${slug}`} class="article-title">{title}</a>
-      <Meta />
-      <p class="excerpt">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo nisl ac pellentesque sagittis.
-        Suspendisse dictum feugiat nunc, at posuere augue tincidunt eget. Suspendisse neque metus, faucibus eu lacus
-        sed, laoreet feugiat urna.
-      </p>
+      <Meta {publishDate} />
+      <p class="excerpt">{@html documentToHtmlString(excerpt)}</p>
     {/each}
   </div>
 </main>
