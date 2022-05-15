@@ -1,7 +1,7 @@
 <h2>Just because you like it doesn't mean it's good for you</h2>
 
 <section class="meta">
-  <img class="avatar" alt="Marca" src="/img/profile.png" />
+  <img class="avatar" alt="Marca" src="/img/profile-xs.png" />
   <span>
     <a href="https://twitter.com/matthew_d_green">Marca</a>
     <span>at</span>
