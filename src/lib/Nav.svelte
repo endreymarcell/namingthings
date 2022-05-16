@@ -5,13 +5,15 @@
 <div id="header-container">
   <header>
     <div id="title-container">
-      <h1>Naming</h1>
-      <h1>Things</h1>
-      <h1>is Hard</h1>
+      <a href="/">
+        <h1>Naming</h1>
+        <h1>Things</h1>
+        <h1>is Hard</h1>
+      </a>
     </div>
     <nav>
       <div>
-        <a href="/">Home</a>
+        <a href="/">Feed</a>
       </div>
       <div>
         <a href="/about">About</a>
@@ -28,7 +30,6 @@
 
   #header-container {
     width: calc(100% - 2 * var(--padding));
-    max-width: 300px;
     padding: var(--padding);
   }
 
@@ -42,16 +43,19 @@
     border-style: solid;
     border-color: black;
 
+    background-color: #ddd;
+  }
+
+  #title-container a {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
-
-    background-color: #ddd;
   }
 
   h1 {
     margin-block: 0.5rem;
+    color: black;
   }
 
   nav {
@@ -69,7 +73,11 @@
   }
 
   @media screen and (min-width: 600px) {
-    #title-container {
+    #header-container {
+      max-width: 300px;
+    }
+
+    #title-container a {
       flex-direction: column;
       padding-block: 1rem;
     }

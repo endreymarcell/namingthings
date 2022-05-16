@@ -3,11 +3,11 @@
 </script>
 
 <section class="meta">
-  <img class="avatar" alt="Marca" src="/img/profile-xs.png" />
+<!--  <img class="avatar" alt="Marca" src="/img/profile-xs.png" />-->
   <span>
-    <a href="https://twitter.com/matthew_d_green">Marca</a>
+    <a href="/about">Marca</a>
     <span>at</span>
-    <time datetime="2022-05-15">{publishDate}</time>
+    <time datetime={publishDate.substring(0, 10)}>{publishDate}</time>
   </span>
 </section>
 

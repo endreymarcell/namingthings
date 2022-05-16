@@ -23,7 +23,9 @@ export type Article = {
   title: string;
   slug: string;
   publishDate: string;
+  lastUpdateDate?: string;
   content: any;
+  isPinned: boolean;
 };
 
 function getExcerpt(content: any) {
@@ -52,20 +54,24 @@ export async function getFeed(): Promise<FeedEntry[]> {
     title: item.fields.title,
     slug: item.fields.slug,
     excerpt: getExcerpt(item.fields.content),
-    publishDate: "",
+    publishDate: formatDate(item.sys.createdAt),
   }));
 }
 
-export async function getEntryBySlug(slug: string) {
+export async function getEntryBySlug(slug: string): Promise<Article> {
   const entries = await client.getEntries();
   const matchingEntries = entries.items.filter((item) => item.fields.slug === slug);
   const entry = matchingEntries[0];
-  const article = {
-    createdAt: entry.sys.createdAt,
-    updatedAt: entry.sys.updatedAt,
+  return {
+    slug,
     title: entry.fields.title,
+    publishDate: formatDate(entry.sys.createdAt),
+    lastUpdateDate: formatDate(entry.sys.updatedAt),
     content: getContent(entry.fields.content),
     isPinned: entry.fields.isPinned,
   };
-  return article;
+}
+
+function formatDate(date: string): string {
+  return date.replace("T", " ").substring(0, 16);
 }

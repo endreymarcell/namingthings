@@ -33,7 +33,7 @@
   }
 
   footer {
-    border-top: 4px solid var(--accent);
+    border-top: 40px solid var(--accent);
     height: 0;
   }
 
