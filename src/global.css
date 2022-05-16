@@ -69,6 +69,15 @@ b {
   font-style: italic;
 }
 
+/* used for quote attribution */
+h6 {
+  text-align: right;
+  font-size: 1rem;
+  margin-top: 0;
+  margin-bottom: 3rem;
+  font-weight: normal;
+}
+
 @media screen and (min-width: 600px) {
   body {
     overscroll-behavior-y: none;
