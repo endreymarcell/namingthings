@@ -2,6 +2,7 @@
   import Nav from "$lib/Nav.svelte";
   import "../global.css";
   import "../theme.css";
+  import Footer from "../lib/Footer.svelte";
 </script>
 
 <svelte:head>
@@ -14,7 +15,7 @@
   <main>
     <slot />
   </main>
-  <footer />
+  <Footer positionClass="bottom-footer" />
 </div>
 
 <style>
@@ -28,22 +29,13 @@
   }
 
   main {
-    padding: 1rem;
+    padding: 8px 1rem;
     max-width: 700px;
-  }
-
-  footer {
-    border-top: 40px solid var(--accent);
-    height: 0;
   }
 
   @media screen and (min-width: 600px) {
     #container {
       flex-direction: row;
-    }
-
-    footer {
-      border: 0;
     }
   }
 </style>

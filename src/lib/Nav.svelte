@@ -1,5 +1,6 @@
 <script lang="ts">
   import "../global.css";
+  import Footer from "./Footer.svelte";
 </script>
 
 <div id="header-container">
@@ -20,6 +21,7 @@
       </div>
     </nav>
   </header>
+  <Footer positionClass="sidebar-footer" />
 </div>
 
 <style>

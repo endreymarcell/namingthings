@@ -8,10 +8,6 @@
 </script>
 
 <main>
-  <div class="tagline">
-    <span class="title">Naming Things is Hard</span> is a blog about software engineering by
-    <span class="author">Marcell Endrey.</span> Read more <a href="/about">here</a>.
-  </div>
   <div id="articles">
     {#each feed as { title, slug, publishDate, excerpt }}
       <a href={`/${slug}`} class="article-title">{title}</a>
@@ -22,14 +18,6 @@
 </main>
 
 <style>
-  .tagline {
-    margin-bottom: 2rem;
-  }
-
-  span.title {
-    color: var(--accent);
-  }
-
   a.article-title {
     color: black;
     text-decoration: underline;
@@ -42,5 +30,12 @@
   p.excerpt {
     margin-top: 0;
     margin-bottom: 2rem;
+  }
+
+  @media screen and (min-width: 600px) {
+    #articles {
+      padding-top: 2rem;
+      border-top: 5px solid var(--accent);
+    }
   }
 </style>
