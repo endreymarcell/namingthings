@@ -13,6 +13,13 @@ const config = {
     }),
     prerender: {
       default: true,
+      onError: ({ path }) => {
+        if (path.includes("linkedin.com")) {
+          // this is fine
+        } else {
+          throw new Error(`Died while trying to pre-render ${path}`);
+        }
+      },
     },
   },
 };
