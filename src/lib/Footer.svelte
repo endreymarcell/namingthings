@@ -3,7 +3,6 @@
 </script>
 
 <footer class={positionClass}>
-  <img alt="Marcell Endrey" src="/img/profile-sm.png" />
   <div>
     <i>Naming Things is Hard</i> is a blog by <a href="https://endreymarcell.hu">Marcell Endrey (Marca)</a> about the
     hard parts of software engineering. Read more
@@ -14,15 +13,10 @@
 <style>
   footer {
     padding: 1rem;
-    border-top: 4px solid black;
+    border-top: 4px solid var(--accent);
     display: flex;
     align-items: center;
     gap: 1rem;
-  }
-
-  footer img {
-    height: 80px;
-    border-radius: 50%;
   }
 
   footer.sidebar-footer {
@@ -31,10 +25,6 @@
     border: 4px solid var(--accent);
     margin-top: 8px;
     line-height: 1.5rem;
-  }
-
-  footer.sidebar-footer img {
-    display: none;
   }
 
   @media screen and (min-width: 600px) {
