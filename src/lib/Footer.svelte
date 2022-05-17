@@ -1,10 +1,12 @@
 <script lang="ts">
-  export let positionClass = 'bottom-footer' | 'sidebar-footer';
+  export let positionClass: "bottom-footer" | "sidebar-footer";
 </script>
 
 <footer class={positionClass}>
   <img alt="Marcell Endrey" src="/img/profile-sm.png" />
-  <div><i>Naming Things is Hard</i> is a blog by Marcell Endrey (Marca) about the hard parts of software engineering. Read more
+  <div>
+    <i>Naming Things is Hard</i> is a blog by <a href="https://endreymarcell.hu">Marcell Endrey (Marca)</a> about the
+    hard parts of software engineering. Read more
     <a href="/about">here</a>.
   </div>
 </footer>

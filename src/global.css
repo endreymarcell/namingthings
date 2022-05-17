@@ -26,6 +26,10 @@ h2 {
   margin-bottom: 2.8rem;
 }
 
+div.excerpt > p:first-child {
+  margin-top: 0;
+}
+
 blockquote {
   display: flex;
   margin-left: 0;
@@ -39,7 +43,7 @@ blockquote {
 }
 
 blockquote::before {
-  content: '“';
+  content: "“";
   font-size: 6rem;
   line-height: 3rem;
   margin-top: 1rem;
@@ -71,7 +75,7 @@ b {
 
 /* used for quote attribution */
 h6::before {
-  content: '—';
+  content: "—";
   margin-inline: 0.2rem;
 }
 

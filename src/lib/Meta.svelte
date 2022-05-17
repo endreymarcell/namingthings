@@ -3,11 +3,10 @@
 </script>
 
 <section class="meta">
-<!--  <img class="avatar" alt="Marca" src="/img/profile-xs.png" />-->
   <span>
     <a href="/about">Marca</a>
     <span>at</span>
-    <time datetime={publishDate.substring(0, 10)}>{publishDate}</time>
+    <time datetime={publishDate.substring(0, 10)}>{publishDate.substring(0, 10)}</time>
   </span>
 </section>
 
@@ -27,11 +26,5 @@
   .meta a {
     font-weight: 300;
     font-style: initial;
-  }
-
-  img.avatar {
-    width: 20px;
-    height: auto;
-    border-radius: 2px;
   }
 </style>
