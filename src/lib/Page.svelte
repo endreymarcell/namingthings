@@ -9,7 +9,10 @@
 
 <h2>{article.title}</h2>
 <Meta publishDate={article.publishDate} />
-{@html documentToHtmlString(article.content)}
+<main>
+  {@html documentToHtmlString(article.content)}
+</main>
+<section />
 
 <style>
   h2 {
@@ -20,17 +23,23 @@
     margin-bottom: 0;
   }
 
-  p {
+  :global(p) {
     line-height: 28px;
   }
 
-  p + p {
+  :global(p + p) {
     margin-top: 2rem;
   }
 
-  p > b {
+  :global(p > b) {
     margin-inline: 2rem;
     font-size: 1.2rem;
     color: var(--entity);
+  }
+
+  @media only screen and (min-width: 600px) {
+    section {
+      height: 5rem;
+    }
   }
 </style>

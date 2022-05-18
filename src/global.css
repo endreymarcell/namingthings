@@ -54,6 +54,12 @@ blockquote::before {
 code {
   font-family: "Fira Code", monospace;
   font-size: 0.9rem;
+  background-color: var(--line);
+  padding: 2px 4px;
+  border-radius: 5px;
+}
+
+code.codeblock {
   background-color: #292d3f;
   color: #a5c5cf;
   padding: 1rem;
