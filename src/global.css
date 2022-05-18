@@ -30,6 +30,26 @@ div.excerpt > p:first-child {
   margin-top: 0;
 }
 
+p {
+  text-indent: 1rem;
+  line-height: 28px;
+}
+
+p + p {
+  margin-top: 2rem;
+}
+
+p > b {
+  margin-inline: 2rem;
+  font-size: 1.2rem;
+  color: var(--entity);
+}
+
+div.excerpt p {
+  text-indent: initial;
+  line-height: 23px;
+}
+
 blockquote {
   display: flex;
   margin-left: 0;
@@ -49,6 +69,10 @@ blockquote::before {
   margin-top: 1rem;
   margin-bottom: -1rem;
   color: var(--entity);
+}
+
+blockquote p {
+  text-indent: initial;
 }
 
 code {

@@ -1,6 +1,8 @@
 <script lang="ts">
   import "../global.css";
   import Footer from "./Footer.svelte";
+
+  export let isAboutPage = false;
 </script>
 
 <div id="header-container">
@@ -21,7 +23,13 @@
       </div>
     </nav>
   </header>
-  <Footer positionClass="sidebar-footer" />
+  {#if isAboutPage}
+    <div id="image-container">
+      <img alt="Marcell Endrey" src="/img/profile-md.png" />
+    </div>
+  {:else}
+    <Footer positionClass="sidebar-footer" />
+  {/if}
 </div>
 
 <style>
@@ -74,7 +82,29 @@
     gap: 2rem;
   }
 
+  #image-container {
+    margin: 1rem;
+    text-align: center;
+  }
+
+  img {
+    width: 50%;
+    border-radius: 20%;
+  }
+
   @media screen and (min-width: 600px) {
+    #image-container {
+      border: 4px solid var(--accent);
+      margin: 1rem 0 0 0;
+      padding: 0.5rem 0.5rem 0.2rem 0.5rem;
+      background: var(--accent);
+    }
+
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
     #header-container {
       max-width: 300px;
     }

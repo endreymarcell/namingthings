@@ -1,8 +1,21 @@
+<script lang="ts" context="module">
+  export const load: Load = ({ url }) => {
+    return {
+      props: {
+        isAboutPage: url.href.includes("about"),
+      },
+    };
+  };
+</script>
+
 <script lang="ts">
   import Nav from "$lib/Nav.svelte";
   import "../global.css";
   import "../theme.css";
   import Footer from "../lib/Footer.svelte";
+  import type { Load } from "@sveltejs/kit";
+
+  export let isAboutPage: boolean = false;
 </script>
 
 <svelte:head>
@@ -11,7 +24,7 @@
 </svelte:head>
 
 <div id="container" class="theme-ayu-light theme-shared-typography">
-  <Nav />
+  <Nav {isAboutPage} />
   <main>
     <slot />
   </main>
