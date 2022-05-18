@@ -50,6 +50,10 @@ div.excerpt p {
   line-height: 23px;
 }
 
+ul p {
+  line-height: 12px;
+}
+
 blockquote {
   display: flex;
   margin-left: 0;
