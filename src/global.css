@@ -51,7 +51,7 @@ div.excerpt p {
 }
 
 ul p {
-  line-height: 12px;
+  margin-block: 6px;
 }
 
 blockquote {
