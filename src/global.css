@@ -5,12 +5,20 @@ html {
 body {
   margin: 0;
   height: 100%;
+  color: var(--text-main);
 }
 
 a {
-  color: var(--accent);
+  color: var(--text-link);
   text-decoration: none;
   font-weight: 500;
+}
+
+p a {
+  background-color: var(--text-link-bg);
+  color: black;
+  padding: 3px;
+  border-radius: 3px;
 }
 
 h1 {
@@ -33,6 +41,7 @@ div.excerpt > p:first-child {
 p {
   text-indent: 1rem;
   line-height: 28px;
+  color: var(--text-main);
 }
 
 p + h1 {
@@ -42,7 +51,7 @@ p + h1 {
 p > b {
   margin-inline: 2rem;
   font-size: 1.2rem;
-  color: var(--entity);
+  color: var(--text-title);
 }
 
 div.excerpt p {
@@ -72,7 +81,7 @@ blockquote::before {
   line-height: 3rem;
   margin-top: 1rem;
   margin-bottom: -1rem;
-  color: var(--entity);
+  color: var(--text-title);
 }
 
 blockquote p {
@@ -101,7 +110,7 @@ b {
   font-size: 1.1rem;
   font-weight: normal;
   text-decoration: underline;
-  text-decoration-color: var(--entity);
+  text-decoration-color: var(--text-title);
   text-decoration-thickness: 3px;
   text-underline-offset: 3px;
   font-style: italic;

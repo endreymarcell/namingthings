@@ -17,9 +17,9 @@
 
 <style>
   a.article-title {
-    color: black;
+    color: var(--text-title);
     text-decoration: underline;
-    text-decoration-color: var(--entity);
+    text-decoration-color: var(--text-heading);
     text-decoration-thickness: 3px;
     text-underline-offset: 3px;
     font-size: 1.5rem;

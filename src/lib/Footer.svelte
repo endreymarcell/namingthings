@@ -17,6 +17,7 @@
     display: flex;
     align-items: center;
     gap: 1rem;
+    color: var(--text-main);
   }
 
   footer.sidebar-footer {

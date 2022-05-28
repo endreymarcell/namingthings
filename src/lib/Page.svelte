@@ -17,7 +17,7 @@
 <style>
   h2 {
     text-decoration: underline;
-    text-decoration-color: var(--entity);
+    text-decoration-color: var(--text-heading);
     text-decoration-thickness: 6px;
     text-underline-offset: 6px;
     margin-bottom: 0;
