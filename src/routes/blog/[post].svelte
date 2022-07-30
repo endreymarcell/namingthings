@@ -23,7 +23,7 @@
   export let PostContent;
   export let meta;
 
-  const { title, excerpt, date, updated, coverImage, coverWidth, coverHeight, categories } = meta;
+  const { title, excerpt, date, updated, categories } = meta;
 </script>
 
 <svelte:head>
@@ -36,22 +36,10 @@
   <meta property="og:description" content={excerpt} />
   <meta name="twitter:description" content={excerpt} />
   <!-- <meta property="og:image" content="https://yourdomain.com/image_path" /> -->
-  <meta property="og:image:width" content={coverWidth} />
-  <meta property="og:image:height" content={coverHeight} />
   <!-- <meta name="twitter:image" content="https://yourdomain.com/image_path" /> -->
 </svelte:head>
 
 <article class="post">
-  <!-- You might want to add an alt frontmatter attribute. If not, leaving alt blank here works, too. -->
-  <img
-    class="cover-image"
-    src={coverImage}
-    alt=""
-    style="aspect-ratio: {coverWidth} / {coverHeight};"
-    width={coverWidth}
-    height={coverHeight}
-  />
-
   <h1>{title}</h1>
 
   <div class="meta">
