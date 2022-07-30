@@ -1,4 +1,4 @@
-import { sveltekit } from '@sveltejs/kit/vite'
+import { sveltekit } from "@sveltejs/kit/vite";
 
 /** @type {import('vite').UserConfig} */
 const config = {
@@ -6,9 +6,9 @@ const config = {
 
   server: {
     fs: {
-      allow: ['.']
-    }
-  }
+      allow: ["."],
+    },
+  },
 };
 
-export default config
+export default config;

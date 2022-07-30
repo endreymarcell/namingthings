@@ -1,39 +1,39 @@
-<!-- This dynamic page renders any page at /blog/category/* -->
 <!-- TODO: add pagination to this route -->
 <script context="module">
-  import fetchPosts from '$lib/assets/js/fetchPosts'
+  import fetchPosts from "$lib/assets/js/fetchPosts";
 
-	export const load = async ({ params, fetch }) => {
-    const category = params.category
-    const options = { category }
-    const { posts } = await fetchPosts(options)
-    const res = await fetch(`/api/posts/category/${category}/count.json`)
-    const { total } = await res.json()
+  export const load = async ({ params, fetch }) => {
+    const category = params.category;
+    const options = { category };
+    const { posts } = await fetchPosts(options);
+    const res = await fetch(`/api/posts/category/${category}/count.json`);
+    const { total } = await res.json();
 
-		return {
-			props: { 
+    return {
+      props: {
         posts,
         category,
-        total
-      }
-		}
-	}
+        total,
+      },
+    };
+  };
 </script>
 
 <script>
-  import PostsList from '$lib/components/PostsList.svelte'
-  import Pagination from '$lib/components/Pagination.svelte'
+  import PostsList from "$lib/components/PostsList.svelte";
+  import Pagination from "$lib/components/Pagination.svelte";
 
-	export let posts
-  export let category
-  export let total
+  export let posts;
+  export let category;
+  export let total;
 </script>
+
+<!-- This dynamic page renders any page at /blog/category/* -->
 
 
 <svelte:head>
-	<title>Category: {category}</title>
+  <title>Category: {category}</title>
 </svelte:head>
-
 
 <h1>Blog category: {category}</h1>
 

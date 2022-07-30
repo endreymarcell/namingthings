@@ -2,7 +2,7 @@
   export const load = () => {
     return {
       status: 301,
-      redirect: '/blog'
-    }
-  }
+      redirect: "/blog",
+    };
+  };
 </script>

@@ -35,7 +35,7 @@
       height: 2em;
       font-family: var(--primaryFont);
       font-weight: bold;
-      transition: background .1s;
+      transition: background 0.1s;
 
       &:hover {
         background: var(--accent);
@@ -48,6 +48,5 @@
         border: 1px solid currentColor;
       }
     }
-
   }
 }

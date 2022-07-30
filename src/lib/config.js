@@ -1,22 +1,22 @@
-export const siteTitle = 'My Awesome Blog'
-export const siteDescription = 'Built with the SvelteKit Static Blog Starter'
-export const siteURL = 'example.com'
-export const siteLink = 'https://github.com/josh-collinsworth/sveltekit-blog-starter'
-export const siteAuthor = 'Josh Collinsworth - find and change this text in src/lib/config.js'
+export const siteTitle = "Naming things is hard";
+export const siteDescription = "A blog about the hard parts of software engineering";
+export const siteURL = "namingthings.com";
+export const siteLink = "https://namingthings.com";
+export const siteAuthor = "Marcell Endrey";
 
-// Controls how many posts are shown per page on the main blog index pages
-export const postsPerPage = 10
+export const postsPerPage = 10;
 
-// Edit this to alter the main nav menu. (Also used by the footer and mobile nav.)
 export const navItems = [
   {
-    title: 'Blog',
-    route: '/blog'
-  }, {
-    title: 'About',
-    route: '/about'
-  }, {
-    title: 'Contact',
-    route: '/contact' 
+    title: "Blog",
+    route: "/blog",
   },
-]
+  {
+    title: "About",
+    route: "/about",
+  },
+  {
+    title: "Contact",
+    route: "/contact",
+  },
+];
