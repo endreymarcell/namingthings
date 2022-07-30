@@ -15,12 +15,12 @@ $xxxlMin: 122.5rem;
 
 :root {
   // Colors
-  --accent: #e63946;
-  --background: #faf9f8;
-  --lightAccent: #a8dae5;
+  --accent: #fca311;
+  --background: #e5e5e5;
+  --lightAccent: var(--accent);
   --lighterAccent: #e6e8e4;
-  --dark: #457b9d;
-  --darker: #1d3557;
+  --dark: #14213d;
+  --darker: black;
   --slate: #2f3948;
 
   --white: #fff;
