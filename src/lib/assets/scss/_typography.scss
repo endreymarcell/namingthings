@@ -1,7 +1,7 @@
 @use "./vars";
 
 :where(h1, h2, h3, h4, h5, h6) {
-  margin: 1rem 0;
+  margin: 2rem 0 1rem;
   line-height: 1.1;
   font-family: var(--accentFont);
   font-weight: bold;
@@ -73,6 +73,12 @@ a {
   }
 }
 
+p a {
+  color: var(--colorful);
+  text-decoration: none;
+  font-weight: 600;
+}
+
 .posts-list a {
   text-underline-offset: 7px;
 }
@@ -88,4 +94,15 @@ ul {
   ::marker {
     color: var(--accent);
   }
+}
+
+p {
+  --indent: -1.5rem;
+  text-indent: var(--indent);
+  margin-left: calc((-1) * var(--indent));
+}
+
+p + h4,
+p + h3 {
+  margin-top: 3rem;
 }
