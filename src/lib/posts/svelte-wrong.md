@@ -134,7 +134,8 @@ To demonstrate what I mean by consistency, consider this snippet:
 </script>
 
 <div on:click={() => numClick++}>
-  {$secondsElapsed} seconds have elapsed and you have clicked me {numClicks} times.
+  {$secondsElapsed} seconds have elapsed...
+  and you have clicked me {numClicks} times.
 </div>
 ```
 
