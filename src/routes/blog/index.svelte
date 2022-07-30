@@ -28,5 +28,4 @@
 <h1>Blog</h1>
 
 <PostsList {posts} />
-
 <Pagination currentPage={1} totalPosts={total} />

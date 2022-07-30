@@ -1,4 +1,3 @@
-<!-- This is the global layout file; it "wraps" every page on the site. (Or more accurately: is the parent component to every page component on the site.) -->
 <script context="module">
   export const load = async ({ url }) => {
     return {

@@ -1,23 +1,28 @@
 <script context="module">
-  export const load = async () => {
-    const ReadMeFile = await import("../../README.md");
-    const ReadMe = ReadMeFile.default;
+  export const load = async ({ fetch }) => {
+    const postRes = await fetch(`/api/posts.json`);
+    const { posts } = await postRes.json();
+
+    const totalRes = await fetch(`/api/posts/count.json`);
+    const { total } = await totalRes.json();
 
     return {
-      props: {
-        ReadMe,
-      },
+      props: { posts, total },
     };
   };
 </script>
 
 <script>
-  export let ReadMe;
+  import PostsList from "$lib/components/PostsList.svelte";
+  import Pagination from "$lib/components/Pagination.svelte";
+
+  export let posts;
+  export let total;
 </script>
 
 <svelte:head>
-  <title>SvelteKit Static Blog Starter</title>
+  <title>Naming Things</title>
 </svelte:head>
 
-<svelte:component this={ReadMe} />
-<!-- This is the README.md file in the root of the repo. It serves double duty as the homepage's content. If you'd rather use your own HTML and/or Svelte, you can delete/modify everything above this line. -->
+<PostsList {posts} />
+<Pagination currentPage={1} totalPosts={total} />
