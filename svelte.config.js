@@ -28,6 +28,13 @@ const config = {
   kit: {
     prerender: {
       default: true,
+      onError: ({ path }) => {
+        if (path.includes("endreymarcell.hu")) {
+          // this is fine, do nothing
+        } else {
+          throw new Error(`Died while trying to pre-render ${path}`);
+        }
+      },
     },
     adapter: adapter(),
   },
