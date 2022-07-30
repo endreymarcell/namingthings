@@ -4,15 +4,20 @@
 </script>
 
 <footer>
-  <MainNav />
-
   <nav>
     <ul>
       <li>
-        <a href="/">Home</a>
+        A blog about the hard parts of software engineering.
+        <div class="copyright">&copy;{new Date().getFullYear()} {siteAuthor}</div>
       </li>
     </ul>
   </nav>
-
-  <p>&copy;{new Date().getFullYear()} {siteAuthor}</p>
+  <MainNav />
 </footer>
+
+<style>
+  .copyright {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+</style>

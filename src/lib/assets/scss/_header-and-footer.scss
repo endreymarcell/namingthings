@@ -169,7 +169,7 @@ footer {
   margin-top: 5rem;
 
   @media (min-width: vars.$smMin) {
-    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .menu-button {
