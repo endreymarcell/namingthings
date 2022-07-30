@@ -19,10 +19,11 @@ $xxxlMin: 122.5rem;
   --background: var(--white);
   --lightAccent: var(--accent);
   --lighterAccent: #e6e8e4;
+  --lightBackground: #f3f4f5;
   --dark: #14213d;
   --darker: black;
   --slate: #2f3948;
-  --codeBackground: rgba(138, 145, 153, 0.1);
+  --codeBackground: var(--lightBackground);
   --colorful: #399ee6;
 
   --white: #fff;

@@ -96,3 +96,29 @@ p + h4,
 p + h3 {
   margin-top: 3rem;
 }
+
+blockquote {
+  display: flex;
+  margin-left: 0;
+  padding: 0.8rem;
+  border-radius: 20px;
+
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  background-color: var(--lightBackground);
+  width: 100%;
+}
+
+blockquote::before {
+  content: "“";
+  font-size: 6rem;
+  line-height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+  color: var(--text-title);
+}
+
+blockquote p {
+  text-indent: initial;
+}
