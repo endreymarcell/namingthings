@@ -1,22 +1,18 @@
 <svelte:head>
-
   <title>About</title>
 </svelte:head>
 
 # About
 
-This is an example of how you can have _markdown_ in page content!
+## About Marca
+My name is Marcell Endrey. My friends and family call me Marca.
 
-- How
-- **Cool**
-- Is _that_!?
+I have spent 7 years at Prezi and currently I'm working at Wise as a senior frontend developer.
+If you want to know more about me, head over to my personal site at [https://endreymarcell.hu](endreymarcell.hu).
 
-If you like, you can also import markdown into any Svelte page.
+I think a lot about how to best approach software engineering.
+[This collection of quotes](/blog/quotes) should give you an idea of what resonates with me.
 
-Anyway, you can find this file here:
-
-```
-src/routes/about.md
-```
-
-Here's the [home link](/) if you wanna go back.
+## About Naming Things
+I started this blog to share my professional opinion on a number of topics related to software engineering in the hope
+of helping others with less experience or a different background.
