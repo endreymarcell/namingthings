@@ -1,6 +1,6 @@
 import fetchPosts from "$lib/assets/js/fetchPosts";
 
-export const get = async ({ params }) => {
+export const GET = async ({ params }) => {
   const { category } = params;
   const options = { category, limit: -1 };
 

@@ -1,7 +1,7 @@
 import { postsPerPage } from "$lib/config";
 import fetchPosts from "$lib/assets/js/fetchPosts";
 
-export const get = async ({ url }) => {
+export const GET = async ({ url }) => {
   try {
     /**
      * These let you add query params to change what's retrieved from the endpoint, e.g.,

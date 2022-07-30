@@ -1,4 +1,4 @@
-export const get = async () => {
+export const GET = async () => {
   try {
     const posts = import.meta.glob(`../../../lib/posts/*.md`);
 
