@@ -17,3 +17,10 @@
     </li>
   {/each}
 </ul>
+
+<style>
+  p {
+    text-indent: 0;
+    margin-left: 0;
+  }
+</style>
