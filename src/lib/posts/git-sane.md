@@ -1,9 +1,16 @@
 ---
 title: Better git command names
 date: 2022-05-17
-updated: 2022-07-21
+updated: 2022-07-30
 excerpt: Getting comfortable with git is famously challenging, and I do believe part of this is that git commands are named very poorly.
 ---
+
+## Presentation
+
+I presented this content in a light-hearted lightning talk at Prezi's Draft Conference in 2022:
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/91J19QG5pzo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+## Introduction
 
 Getting comfortable with git is famously challenging, and I do believe part of this is that git commands are named very
 poorly. The documentation often only manages to increase confusion — see the [git-man-page-generator](https://git-man-page-generator.lokaltog.net/) for a hilarious
