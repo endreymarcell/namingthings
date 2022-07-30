@@ -44,11 +44,11 @@
 
   <div class="meta">
     <b>Published:</b>
-    {date}
+    {date.substring(0, "2022-02-02".length)}
     {#if updated}
       <br />
       <b>Updated:</b>
-      {updated}
+      {updated.substring(0, "2022-02-02".length)}
     {/if}
   </div>
 
