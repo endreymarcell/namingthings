@@ -1,6 +1,7 @@
 ---
 title: What Svelte got wrong
 date: 2022-07-13
+updated: 2022-07-30
 excerpt: Just like many other folks, I quite enjoy using Svelte - heck, even this page is running on SvelteKit! Nevertheless, there are parts of the syntax where I respectfully disagree with the choices the team took.
 ---
 
@@ -100,9 +101,7 @@ type Props = { count: number };
 let { count } = getProps<Props>();
 ```
 
-Provided that there's a declaration injected for `getProps<T>(): T`, this is valid, and it represents the idea much
-better. (If it were up to me, I'd of course force `const` here instead of `let`, but let's just follow Svelte's philosophy
-here.)
+Provided that there's a declaration injected for `getProps<T>(): T`, this is valid, and it represents the idea much better.
 
 ## Store values, rather than stores, are prefixed with `$`
 
