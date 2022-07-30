@@ -1,54 +1,70 @@
-<script lang="ts" context="module">
-  export const load: Load = ({ url }) => {
+<!-- This is the global layout file; it "wraps" every page on the site. (Or more accurately: is the parent component to every page component on the site.) -->
+<script context="module">
+	export const load = async({ url, fetch }) => {
+    /**
+     * This fetch call is not used in this file, but the route won't be pre-rendered 
+     * and routed properly unless it's called inside a `load` function. ¯\_(ツ)_/¯
+     * */ 
+    const rss = await fetch(`/api/rss.xml`)
+
     return {
       props: {
-        isAboutPage: url.href.includes("about"),
-      },
-    };
-  };
-</script>
-
-<script lang="ts">
-  import Nav from "$lib/Nav.svelte";
-  import "../global.css";
-  import "../theme.css";
-  import Footer from "../lib/Footer.svelte";
-  import type { Load } from "@sveltejs/kit";
-
-  export let isAboutPage: boolean = false;
-</script>
-
-<svelte:head>
-  <title>Naming Things</title>
-  <meta name="description" content="Naming things is hard: a blog about software engineering" />
-</svelte:head>
-
-<div id="container" class="theme-ayu-light theme-shared-typography">
-  <Nav {isAboutPage} />
-  <main>
-    <slot />
-  </main>
-  <Footer positionClass="bottom-footer" />
-</div>
-
-<style>
-  #container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    min-height: 100%;
-    background: var(--bg-main);
-    font-family: var(--font-body);
-  }
-
-  main {
-    padding: 8px 1rem;
-    max-width: 700px;
-  }
-
-  @media screen and (min-width: 600px) {
-    #container {
-      flex-direction: row;
+        path: url.pathname
+      }
     }
   }
-</style>
+</script>
+
+<script>
+  import '$lib/assets/scss/global.scss'
+  import Header from '$lib/components/Header.svelte'
+  import Footer from '$lib/components/Footer.svelte'
+  import { currentPage, isMenuOpen } from '$lib/assets/js/store'
+  import { navItems } from '$lib/config'
+	import { prefetch } from '$app/navigation'
+  import { onMount } from 'svelte'
+  import { fade } from 'svelte/transition'
+import Callout from '$lib/components/Callout.svelte';
+
+  const transitionIn = { delay: 150, duration: 150 }
+  const transitionOut = { duration: 100 }
+
+  export let path
+  
+  /**
+   * Updates the global store with the current path. (Used for highlighting 
+   * the current page in the nav, but could be useful for other purposes.)
+   **/
+  $: currentPage.set(path)
+
+  /**
+   * This pre-fetches all top-level routes on the site in the background for faster loading.
+   * https://kit.svelte.dev/docs#modules-$app-navigation
+   * 
+   * Any route added in src/lib/config.js will be prefetched automatically. You can add your
+   * own prefetch() calls here, too.
+   **/
+  onMount(() => {
+    navItems.forEach(item => prefetch(item.route))
+  })
+</script>
+
+
+<!-- 
+  The below markup is used on every page in the site. The <slot> is where the page's
+  actual contents will show up.
+-->
+<div class="layout" class:open={$isMenuOpen}>
+  <Header />
+  {#key path}
+    <main
+      id="main"
+      tabindex="-1"
+      in:fade={transitionIn}
+      out:fade={transitionOut}
+    >
+      <slot />
+    </main>
+  {/key}
+  <Footer />
+</div>

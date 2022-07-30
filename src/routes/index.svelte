@@ -1,10 +1,25 @@
-<script lang="ts">
-  import type { FeedEntry } from "$lib/content";
+<script context="module">
+  export const load = async () => {
+		const ReadMeFile = await import('../../README.md');
+    const ReadMe = ReadMeFile.default;
 
-  import Feed from "$lib/Feed.svelte";
-  export let feed: FeedEntry[] = [];
+		return {
+			props: {
+				ReadMe
+			}
+		}
+	}
 </script>
 
-<main>
-  <Feed {feed} />
-</main>
+<script>
+  export let ReadMe
+</script>
+
+
+<svelte:head>
+	<title>SvelteKit Static Blog Starter</title>
+</svelte:head>
+
+
+<svelte:component this={ReadMe} />
+<!-- This is the README.md file in the root of the repo. It serves double duty as the homepage's content. If you'd rather use your own HTML and/or Svelte, you can delete/modify everything above this line. -->
