@@ -5,8 +5,8 @@
 
     let uniqueCategories = {};
 
-    posts.forEach((post) => {
-      post.categories.forEach((category) => {
+    (posts ?? []).forEach((post) => {
+      (post.categories ?? []).forEach((category) => {
         if (uniqueCategories.hasOwnProperty(category)) {
           uniqueCategories[category].count += 1;
         } else {
