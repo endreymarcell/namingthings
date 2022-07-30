@@ -20,8 +20,8 @@
   import { fade } from "svelte/transition";
   import Callout from "$lib/components/Callout.svelte";
 
-  const transitionIn = { delay: 150, duration: 150 };
-  const transitionOut = { duration: 100 };
+  const transitionIn = { delay: 80, duration: 100 };
+  const transitionOut = { duration: 80 };
 
   export let path;
 
