@@ -26,3 +26,13 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
 }
+
+@font-face {
+  font-family: "Fira Sans";
+  src: url("/font/FiraSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "Fira Code";
+  src: url("/font/FiraCode-Regular.ttf");
+}
