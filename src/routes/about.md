@@ -20,3 +20,5 @@ I think a lot about how to best approach software engineering.
 ## About Naming Things
 I started this blog to share my professional opinion on a number of topics related to software engineering in the hope
 of helping others with less experience or a different background.
+
+This site is running on [Vercel](https://vercel.com) and it is using [SvelteKit](https://kit.svelte.dev) based on [Josh Collinshworth](https://joshcollinsworth.com)'s awesome [starter](https://github.com/josh-collinsworth/sveltekit-blog-starter). 
