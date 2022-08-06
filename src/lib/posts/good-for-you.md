@@ -20,10 +20,9 @@ served by it.
 
 And there's nothing wrong with drinking a can of coke every now and then, just like there's nothing wrong with working
 from home from time to time. But only drinking coke each day, every day is a different story. Of course we already know
-that. But as for switching to fully remote work, most of us don't have enough experience to gauge the long-term effects,
-and so we might be misled by our craving for what feels better right now. This is also a vicious cycle in some sense: if
-we're not feeling very good about our job our about ourselves, we'll have even less energy to go the extra mile (
-literally) to hit the office and to socialize. And only once type-2 diabetes kicks in do we start to ponder if we
+that. But __as for switching to fully remote work, most of us don't have enough experience to gauge the long-term effects,
+and so we might be misled by our craving for what feels better right now__. This is also a vicious cycle in some sense: if
+we're not feeling very good about our job our about ourselves, we'll have even less energy to go the extra mile (literally) to hit the office and to socialize. And only once type-2 diabetes kicks in do we start to ponder if we
 would've been better off "losing" all that time and money on public transport.
 
 Different companies, different teams, different situations, different people — your mileage may vary. One size doesn't

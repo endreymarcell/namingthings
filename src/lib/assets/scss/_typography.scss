@@ -122,3 +122,9 @@ blockquote::before {
 blockquote p {
   text-indent: initial;
 }
+
+p strong {
+  font-weight: normal;
+  text-decoration: orange underline;
+  text-underline-offset: 5px;
+}
