@@ -29,7 +29,22 @@ body {
 
 @font-face {
   font-family: "Fira Sans";
+  src: url("/font/FiraSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Fira Sans light";
   src: url("/font/FiraSans-Light.ttf");
+}
+
+@font-face {
+  font-family: "Fira Sans semibold";
+  src: url("/font/FiraSans-SemiBold.ttf");
+}
+
+@font-face {
+  font-family: "Fira Sans Black";
+  src: url("/font/FiraSans-Black.ttf");
 }
 
 @font-face {

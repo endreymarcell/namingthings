@@ -28,7 +28,7 @@ h2 {
   font-size: 2rem;
   text-decoration: underline;
   text-decoration-color: var(--accent);
-  text-underline-offset: 0.4rem;
+  text-underline-offset: 10px !important;
   line-height: 3.6rem;
 
   @media (min-width: vars.$smMin) {
@@ -70,7 +70,7 @@ p a {
 }
 
 .posts-list a {
-  text-underline-offset: 7px;
+  text-underline-offset: 10px;
 }
 
 ul {
