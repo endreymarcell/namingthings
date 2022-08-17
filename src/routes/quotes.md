@@ -40,6 +40,10 @@ simply true or false. This one comes from my mom.
 > If you're the smartest person in the room, you're in the wrong room.
 
 General wisdom.
+
+> Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law.
+
+Douglas Hofstadter, in his book titled _Gödel, Escher, Bach: An Eternal Golden Braid_ which I absolutely adore. 
 </div>
 
 <style>
