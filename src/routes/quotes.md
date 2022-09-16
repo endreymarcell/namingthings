@@ -35,7 +35,7 @@ I'm going to credit [Ákos Hochrein](https://www.linkedin.com/in/akoshochrein/) 
 > This is so untrue that even its opposite is untrue.
 
 Meaning that the statement is not simply false but a gross oversimplification of the topic, so it couldn't even be
-simply true or false. This one comes from my mom.
+simply true or false. This one comes from my mom, although it's also generally known as ["not even wrong"](https://rationalwiki.org/wiki/Not_even_wrong).
 
 > If you're the smartest person in the room, you're in the wrong room.
 
