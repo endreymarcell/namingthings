@@ -1,7 +1,7 @@
 <!-- This file handles any /blog/page/x route for pagination -->
 <script context="module">
-  import { postsPerPage, siteDescription } from "$lib/config";
-  import fetchPosts from "$lib/assets/js/fetchPosts";
+  import { postsPerPage, siteDescription } from "$lib/config.js";
+  import fetchPosts from "$lib/assets/js/fetchPosts.js";
 
   export const load = async ({ fetch, params }) => {
     try {

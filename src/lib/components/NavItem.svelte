@@ -3,7 +3,7 @@
 
   export let href;
 
-  $: isCurrentPage = $currentPage.startsWith(href);
+  $: isCurrentPage = ($currentPage ?? '').startsWith(href);
 
   const maybeCloseMenu = () => {
     if (href != $currentPage) {
