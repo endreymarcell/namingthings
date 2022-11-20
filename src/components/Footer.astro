@@ -3,11 +3,19 @@ const today = new Date();
 ---
 
 <footer>
-  &copy; {today.getFullYear()} Marcell Endrey. All rights reserved.
+  <div id="tagline">A blog about the hard parts of software engineering.</div>
+  <div>&copy; {today.getFullYear()} Marcell Endrey. All rights reserved.</div>
 </footer>
 <style>
   footer {
     padding: 25px;
     text-align: center;
+    background: var(--black);
+    color: var(--white);
+  }
+
+  #tagline {
+    font-size: 1.2rem;
+    line-height: 4rem;
   }
 </style>
