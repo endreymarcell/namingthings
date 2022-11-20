@@ -10,7 +10,7 @@ I don't anymore.
 
 ## Linting
 
-One of the main use cases - and indeed the original use case - for linters is to detect mistakes that the programmer does.
+One of the main use cases - and indeed the original use case - for linters is to detect mistakes that the programmer made.
 The type of code a linter would flag is one that is technically valid, but most likely does something else than what you intended.
 A related genre of linter violations is using features of a language that are generally viewed as bad practices or footguns and should be avoided.
 (This is especially useful for JavaScript which, as we all now, comes with a lot of pitfalls due to its inception and heritage.)
@@ -38,9 +38,9 @@ Which is also why I like this line from The Zen of Python:
 ## Formatting
 
 And on the topic of not having to argue and not having to think: automated code formatters are a godsend.
-I am a person who can be picky about the specifics of code formatting, but ever since I've gotten used to having my code automatically formatted for me whenever I hit Save, I don't think I can ever go back.
-There's nothing more menial than having to indent or dedent lines of code,
-and no minute wasted as badly as the one you spent pondering if you should wrap this statement in two lines or leave it on one.
+I am a person who can be picky about the specifics of code formatting, but ever since I've gotten used to having my code automatically formatted for me whenever I save it, I don't think I can ever go back.
+There's nothing more menial than having to indent or unindent lines of code,
+and no time is wasted as badly as the time you spent pondering if you should wrap this statement onto a new line or leave it on the current one.
 I never ever want to have to care about things like this again.
 (As a funny aside, I stopped having an opinion on writing or omitting statement-closing semicolons in JavaScript.
 Frankly, _I don't even know_ if the codebases I'm working on use or omit semicolons.
@@ -51,8 +51,9 @@ I'd like to take this occasions to react to some of the points Anthony Fu makes 
 In my opinion, the fact that Prettier is highly opinionated is great, and makes it much more usable than other tools.
 If only I could have all the time back that I have spent fiddling with ESLint configurations!
 You might say I should just choose a ruleset and be done with it, but now I have another problem: which ruleset do I choose?
-(Cue xkcd comic about competing standards.)
+(Cue the [relevant xkcd comic strip](https://xkcd.com/927/) about competing standards.)
 Especially for those who are new to JavaScript, this is just another source of confusion.
+
 In his blog post, Anthony states that
 
 > Opinionated essentially means it’s not for everyone.
@@ -63,7 +64,7 @@ It's both for those who could also form their own informed decisions, and for th
 
 As for the [line wrapping noise](https://antfu.me/posts/why-not-prettier#the-line-wrapping-noise) Anthony mentions, I agree that this is an unfortunate phenomenon with no real good solution, but this hasn't got much to do with Prettier.
 The fact is that when you keep adding items to some kind of list, at some point you'll want to wrap it into a new line.
-The only reason to avoid that is to always start with a multi-line format, even for a single item, and I think we all agree we don't want that.
+The only way to avoid that is to always start with a multi-line format, even for a single item, and I think we all agree we don't want that.
 But if that's the case, you'll always have a point where you'll need to wrap the line, and that will cause noise in your diff.
 Now, if you do this wrapping yourself, you can get out of some of the cases, but you are only delaying the inevitable.
 And the price you pay for that is that now you have to do the line-wrapping by yourself.
@@ -73,11 +74,11 @@ Is that really the best use of your time?
 And this applies in general.
 Yes, I agree that in certain cases, the code that Prettier produces is actually less readable/consistent than the raw version.
 Yes, [this example](https://prettier.io/playground/#N4Igxg9gdgLgprEAuc0DOMAEBXNcBOamAvJgNoA6UmmwOe+AkgCZKYCMANPQVAIYBbOGwogAggBsAZgEs4mAMJ98QiTJh9RmAL6cqNOrgIs2AJm5H8-ISJABxGf0wAlCGgAWfKFt37aPJlZMAGYLBmthTFEAZXdsAHNMADk+ACNsHz1qf0sTTAAWMN5BSNFnPncBL0wAMXw+Bky-QwY8gFYiqxLbABU3d3kAGQBPbFSEJuyW4yCANk6I22iCeJkIZJkJCCllSYBdAG4qEE4QCAAHGDWoNGRQZXwIAHcABWUEW5Q+CSe+YdvTql6mAANZwGDREqDRxwZA7CR4QHAsEQ858MCOeLIGD4bBwU5wATjZjMODMQZeeLYPjxOA1CAqPgwK5QLFfbAwCAnEDuGACCQAdXc6jgaDRYDgyxu6hkADd1MNkOA0ACQI4GDAXvV4lU4d9ESAAFZoAAe0UxEjgAEVsBB4HqEfiQGjCAQlak0nAJNzzvhHDABTJmDB3Mh8uZnY88AL6uclb7RQRZbDTgBHW3wLUXT4gBoAWigcDJZO5+Dg6ZkZa1NN1SHhBrwAhk2NxTrQFutGdhdf1To0qUDwdDSAjOL4m0xCggAlrIFFbW5Rh6aU+9adsrxjCgpNg0TAfsuYm30Rgw0tDrw2m0QA) demonstrates this well.
-But at the end of the day, the value of never having to think about formatting - not when writing the code, not when reviewing a Pull Request, never - is worth so much more than those couple of cases.
+But at the end of the day, the value of never having to think about formatting - not when writing the code, not when reviewing a Pull Request, never - is so much higher than that of those couple of cases.
 
 > The real pain point is that this behavior is not optional. You can’t disable it completely.
 
-That's not the pain point; that's the value proposition.
+That's not the pain point; **that's the value proposition**.
 
 > The only workaround you can do is to use `// prettier-ignore`, which to me, the "all or nothing" choice loses the point of using Prettier in the first place.
 
