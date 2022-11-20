@@ -4,7 +4,7 @@ const today = new Date();
 
 <footer>
   <div id="tagline">A blog about the hard parts of software engineering.</div>
-  <div>&copy; {today.getFullYear()} Marcell Endrey. All rights reserved.</div>
+  <div id="copyright">&copy; {today.getFullYear()} Marcell Endrey. All rights reserved.</div>
 </footer>
 <style>
   footer {
@@ -17,5 +17,9 @@ const today = new Date();
   #tagline {
     font-size: 1.2rem;
     line-height: 4rem;
+  }
+
+  #copyright {
+    font-size: 0.7em;
   }
 </style>

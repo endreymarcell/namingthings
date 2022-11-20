@@ -5,7 +5,7 @@ body {
   font-family: var(--primary-font);
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.6;
 }
 
@@ -19,7 +19,68 @@ h6 {
   margin: 0;
 }
 
+h2 {
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 10px;
+  text-decoration-thickness: 5px;
+}
+
 a {
   color: var(--black);
   text-decoration: none;
+}
+
+p {
+  --indent: -1.5rem;
+  text-indent: var(--indent);
+  margin-left: calc(-1 * var(--indent));
+}
+
+p a {
+  font-weight: 600;
+  color: var(--colorful);
+}
+
+blockquote {
+  display: flex;
+  margin-left: 0;
+  padding: 0.8rem;
+  border-radius: 20px;
+
+  font-family: "Georgia", serif;
+  font-style: italic;
+  font-size: 1.2rem;
+  background-color: var(--quote-background);
+  width: 100%;
+}
+
+blockquote::before {
+  content: "“";
+  font-size: 6rem;
+  line-height: 3rem;
+  margin-top: 1rem;
+  margin-bottom: -1rem;
+  color: var(--text-title);
+}
+
+blockquote p {
+  text-indent: initial;
+}
+
+code {
+  color: var(--black);
+  font-size: 1rem;
+  padding: 0.2rem 0.3rem;
+  border-radius: 4px;
+  background: var(--code-background);
+}
+
+pre {
+  padding: 0.5rem;
+  line-height: initial;
+}
+
+pre code {
+  background: initial;
 }

@@ -10,7 +10,8 @@
   --paper: var(--background);
 
   --background: var(--white);
-  --code-background: var(--lightBackground);
+  --quote-background: #f3f4f5;
+  --code-background: #f3f4f5;
 
   --title-font: "Fira Sans light", sans-serif;
   --heading-font: "Fira Sans black", Times, serif;
