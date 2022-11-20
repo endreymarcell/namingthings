@@ -26,6 +26,18 @@ h2 {
   text-decoration-thickness: 5px;
 }
 
+h2 code {
+  font-size: inherit;
+}
+
+h2 + h3 {
+  margin-top: 1rem;
+}
+
+p + h4 {
+  margin-top: 3rem;
+}
+
 a {
   color: var(--black);
   text-decoration: none;
