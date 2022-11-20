@@ -1,7 +1,7 @@
 ---
 title: What Svelte got wrong
 pubDate: 2022-07-13
-excerpt: Just like many other folks, I quite enjoy using Svelte - heck, even this page is running on SvelteKit! Nevertheless, there are parts of the syntax where I respectfully disagree with the choices the team took.
+excerpt: Just like many other folks, I quite enjoy using Svelte. Nevertheless, there are parts of the syntax where I respectfully disagree with the choices the team took.
 layout: ../../layouts/BlogPost.astro
 ---
 
@@ -20,8 +20,6 @@ The compiler then sprinkles some magic onto your code so that when you change th
 
 However, if you stick an `export` keyword in front of your reactive variable, you've suddenly got a prop for yourself.
 This behaves almost the same, except that now it can also be set by callers who are rendering your component.
-
-#### Data flow
 
 This is problematic for multiple reasons. One of them is that, at least in my view, it gives you the wrong idea about
 which way the data is flowing in your application. Given two modules, `parent` and `child`, if `child` exposes a value using
@@ -102,6 +100,23 @@ let { count } = getProps<Props>();
 ```
 
 Provided that there's a declaration injected for `getProps<T>(): T`, this is valid, and it represents the idea much better.
+
+**Update:** as I am currently in the process of rewriting this blog in Astro, let me point out that they actually [got this right](https://docs.astro.build/en/core-concepts/astro-components/#component-props):
+
+```astro
+---
+interface Props {
+  name: string;
+  greeting?: string;
+}
+
+const { greeting = "Hello", name } = Astro.props;
+---
+
+<h2>{greeting}, {name}!</h2>
+```
+
+So good!
 
 ## Store values, rather than stores, are prefixed with `$`
 

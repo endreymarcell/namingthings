@@ -1,7 +1,7 @@
 ---
-title: "Out with eslint, in with Prettier"
+title: "Out with ESLint, in with Prettier"
 pubDate: 2022-11-13
-excerpt: If you had asked me a couple of years ago about setting up a new JavaScript project, I would definitely have listed eslint as one of the necessary tools for development. I don't anymore.
+excerpt: If you had asked me a couple of years ago about setting up a new JavaScript project, I would definitely have listed ESLint as one of the necessary tools for development. I don't anymore.
 layout: ../../layouts/BlogPost.astro
 ---
 
