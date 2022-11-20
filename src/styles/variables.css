@@ -1,0 +1,19 @@
+:root {
+  --white: #fff;
+  --black: #152030;
+  --dark: #14213d;
+  --slate: #2f3948;
+
+  --accent: #fca311;
+  --colorful: #399ee6;
+  --ink: var(--slate);
+  --paper: var(--background);
+
+  --background: var(--white);
+  --code-background: var(--lightBackground);
+
+  --title-font: "Fira Sans light", sans-serif;
+  --heading-font: "Fira Sans black", Times, serif;
+  --primary-font: "Fira Sans", sans-serif;
+  --code-font: "Fira Code", monospace;
+}

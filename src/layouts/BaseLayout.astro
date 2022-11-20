@@ -1,0 +1,31 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+    <style>
+      #main-layout {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto 1fr auto;
+        min-height: 100vh;
+        background: var(--paper);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main-layout">
+      <Header />
+      <main>
+        <slot />
+      </main>
+      <Footer />
+    </div>
+  </body>
+</html>
