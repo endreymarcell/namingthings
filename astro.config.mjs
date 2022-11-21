@@ -5,7 +5,6 @@ import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
 	site: 'https://namingthings.tech',
-	outDir: 'build',
 	integrations: [mdx(), sitemap()],
 	markdown: {
 		shikiConfig: {
