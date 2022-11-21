@@ -19,7 +19,9 @@ import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
       }
 
       main {
-        width: 100%;
+        --padding-inline: 1rem;
+        padding-inline: var(--padding-inline);
+        width: calc(100% - 2 * var(--padding-inline));
         max-width: 42rem;
         margin: 1rem auto;
       }

@@ -12,6 +12,7 @@ const today = new Date();
     text-align: center;
     background: var(--black);
     color: var(--white);
+    margin-top: 6rem;
   }
 
   #tagline {
@@ -21,5 +22,19 @@ const today = new Date();
 
   #copyright {
     font-size: 0.7em;
+  }
+
+  @media (max-width: 600px) {
+    footer {
+      margin-top: 2rem;
+    }
+
+    #tagline {
+      line-height: 2rem;
+    }
+
+    #copyright {
+      margin-top: 1rem;
+    }
   }
 </style>

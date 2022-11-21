@@ -17,18 +17,16 @@ const sortedPosts = unsortedPosts.sort(comparePostsByPublishDate);
 ---
 
 <BaseLayout>
-  <ul>
-    {
-      sortedPosts.map((post) => (
-        <div class="post">
-          <h3>
-            <a href={post.url}>{post.frontmatter.title}</a>
-          </h3>
-          <aside>{post.frontmatter.excerpt}</aside>
-        </div>
-      ))
-    }
-  </ul>
+  {
+    sortedPosts.map((post) => (
+      <div class="post">
+        <h3>
+          <a href={post.url}>{post.frontmatter.title}</a>
+        </h3>
+        <aside>{post.frontmatter.excerpt}</aside>
+      </div>
+    ))
+  }
 </BaseLayout>
 
 <style>
