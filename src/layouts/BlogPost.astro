@@ -34,9 +34,19 @@ const {
   h1 {
     font-size: 3rem;
     margin-top: 1rem;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: var(--colorful);
+    text-decoration-thickness: 4px;
   }
 
   time {
     font-size: 0.8rem;
+  }
+
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 10vw;
+    }
   }
 </style>
