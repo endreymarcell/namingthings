@@ -30,7 +30,7 @@ you could decide to set your alarm 10 minutes earlier than usual for just one we
 which would give you an extra 60 minutes from Monday until Saturday.
 Does this mean you now have your extra hour on Sunday? Of course not.
 What you have is 6 times 10 minutes.
-Which can be nice - you can read a couple of pages from a book,
+Which can be nice &mdash; you can read a couple of pages from a book,
 stretch a little, or maybe watch the sunrise.
 But you cannot cook the meal because that takes on hour of uninterrupted time,
 which is why this addition just doesn't add up.
