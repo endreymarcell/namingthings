@@ -19,7 +19,7 @@ Attributed to a number of people including Cicero, Mark Twain, Blaise Pascal, an
 
 > If the implementation is hard to explain, it's a bad idea.
 
-Although I have some reservations about Python, its design philosophy is still near and dear to my heart, and I agree with many of the points from [The Zen of Python](https://peps.python.org/pep-0020/) by Tim Peters - this one is just one example.
+Python's design philosophy is still near and dear to my heart, and I agree with many of the points from [The Zen of Python](https://peps.python.org/pep-0020/) by Tim Peters &mdash; this one is just one example.
 
 > Given unlimited resources and unlimited schedule, great engineers will produce exactly nothing.
 
@@ -34,6 +34,7 @@ Caveat: it might get a stomach ache.
 
 I'm going to credit [Ákos Hochrein](https://www.linkedin.com/in/akoshochrein/) with this one who often said this referring to change request diffs.
 
+<!--
 > This is so untrue that even its opposite is untrue.
 
 Meaning that the statement is not simply false but a gross oversimplification of the topic, so it couldn't even be
@@ -42,6 +43,11 @@ simply true or false. This one comes from my mom, although it's also generally k
 > If you're the smartest person in the room, you're in the wrong room.
 
 General wisdom.
+-->
+
+> I think the devil is real and he wants you to be more productive.
+
+Adam Mastroianni, in [Excuse me but why are you eating so many frogs](https://experimentalhistory.substack.com/p/excuse-me-but-why-are-you-eating).
 
 > Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law.
 
