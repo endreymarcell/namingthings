@@ -18,7 +18,7 @@ It feels like poor Dan Abramov's full-time job in his last year was just trying 
 
 You know what this reminds me of? Prototypal inheritance in JavaScript.
 I read about it in all the JavaScript books again and again,
-and each author ensured me that although prototypal inheritance might feel odd at first if you're used to other languages,
+and each author assured me that although prototypal inheritance might feel odd at first if you're used to other languages,
 but once you understand it, it's actually a very powerful mechanism, maybe even better than class-based inheritance.
 
 All that has achieved was make me feel dumb.
