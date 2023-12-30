@@ -22,7 +22,7 @@ you'd be hard-pressed to find someone actually recommending that you add redux t
 (Note that in the survey linked above, 'used and disliked' is considerably higher for redux than 'used and liked')
 
 Nevertheless, I did choose to add redux to the SPA my team is working on,
-because it deemed it our best chance to get out of the bowl of state handling spaghetti we had on our hands.
+because I deemed it our best chance to get out of the bowl of state handling spaghetti we had on our hands.
 Further arguments included the fact that the codebase already used a redux-ish pattern in some places,
 and that I knew using redux would make it relatively easy for others in the team/company to understand the codebase.
 
@@ -30,7 +30,7 @@ and that I knew using redux would make it relatively easy for others in the team
 
 For starters, I believe [redux-toolkit](https://redux-toolkit.js.org/) actually gets many things right...
 but side effects only half-right.
-It's thunk-based approach combined with automatically creating `pending`, `fulfilled` and `rejected` actions is quite alright.
+Its thunk-based approach combined with automatically creating `pending`, `fulfilled` and `rejected` actions is quite alright.
 
 What bothered me is that even though redux does an excellent job in moving all the business logic decisions out of components and into the reducer,
 it fails to do that for side effects.
