@@ -32,7 +32,7 @@ Does this mean you now have your extra hour on Sunday? Of course not.
 What you have is 6 times 10 minutes.
 Which can be nice &mdash; you can read a couple of pages from a book,
 stretch a little, or maybe watch the sunrise.
-But you cannot cook the meal because that takes on hour of uninterrupted time,
+But you cannot cook the meal because that takes one hour of uninterrupted time,
 which is why this addition just doesn't add up.
 
 Even if the number of hours saved up by not commuting to work every day
