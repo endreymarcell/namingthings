@@ -25,7 +25,7 @@ with other periods of free time later on.
 
 Let's say you want to cook a meal on Sunday
 but you realize your day is packed so you won't have the time.
-Assuming that cooking would take you one whole our,
+Assuming that cooking would take you one whole hour,
 you could decide to set your alarm 10 minutes earlier than usual for just one week,
 which would give you an extra 60 minutes from Monday until Saturday.
 Does this mean you now have your extra hour on Sunday? Of course not.
