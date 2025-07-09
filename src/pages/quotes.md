@@ -53,6 +53,10 @@ Adam Mastroianni, in [Excuse me but why are you eating so many frogs](https://ex
 
 Douglas Hofstadter, in his book titled _Gödel, Escher, Bach: An Eternal Golden Braid_ which I absolutely adore.
 
+> Anyone can do any amount of work, provided it isn't the work he is supposed to be doing at that moment.
+
+By Robert Benchley. I read it on [structuredprocrastrination.com](https://www.structuredprocrastination.com).
+
 </div>
 
 <style>
