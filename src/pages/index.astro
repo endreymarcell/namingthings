@@ -6,6 +6,7 @@ type Post = MarkdownLayoutProps<{
   title: string;
   pubDate: string;
   excerpt: string;
+  isDraft?: true;
 }>;
 
 function comparePostsByPublishDate(a: Post, b: Post) {
@@ -14,11 +15,12 @@ function comparePostsByPublishDate(a: Post, b: Post) {
 
 const unsortedPosts: Post[] = await Astro.glob("./blog/*.{md,mdx}");
 const sortedPosts = unsortedPosts.sort(comparePostsByPublishDate);
+const publishedPosts = sortedPosts.filter(post => !post.frontmatter.isDraft)
 ---
 
 <BaseLayout>
   {
-    sortedPosts.map((post) => (
+    publishedPosts.map((post) => (
       <div class="post">
         <h3>
           <a href={post.url}>{post.frontmatter.title}</a>
