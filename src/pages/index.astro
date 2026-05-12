@@ -13,7 +13,7 @@ function comparePostsByPublishDate(a: Post, b: Post) {
   return new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf();
 }
 
-const unsortedPosts: Post[] = await Astro.glob("./blog/*.{md,mdx}");
+const unsortedPosts: Post[] = await Astro.glob("./posts/*.{md,mdx}");
 const sortedPosts = unsortedPosts.sort(comparePostsByPublishDate);
 const publishedPosts = sortedPosts.filter(post => !post.frontmatter.isDraft)
 ---
