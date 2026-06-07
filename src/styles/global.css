@@ -117,3 +117,8 @@ pre {
 pre code {
   background: initial;
 }
+
+p strong {
+  text-decoration: underline 3px solid var(--accent);
+  text-underline-offset: 0.4rem;
+}
