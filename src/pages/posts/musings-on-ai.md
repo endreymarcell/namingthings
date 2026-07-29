@@ -33,3 +33,9 @@ The problem here is that we rely on our intuition of how intelligence works. But
 More generally: the LLM talks like a person, so we're assume it works and behaves like one. This is incorrect. __The way AI works subverts our intuition, and we haven't yet internalized the proper mental models for how to think about them.__
 
 ---
+
+I see lots of people remarking that ["The job was never to write. The job was to solve problems."](https://www.reddit.com/r/webdev/comments/1v9ulo9/comment/p0gh82h/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button) which is not untrue, but 'solving problems' is way too high-level and vague to be helpful in any way.
+My car mechanic solves problems. The dentist solves problems. [The Wolf](https://quentin-tarantino.fandom.com/wiki/The_Wolf) solves problems. They have nothing in common.  
+
+So don't tell me the job was not to write code.  
+It was in the job description. It was on the interview. It was what we all were doing in a large portion of the time. __Of course the job was to write code.__ It was lots of other things too, sure, but dismissing someone's lament about losing the coding portion of the job by saying the job is to solve problems is like telling an amputee they have nothing to be disappointed about because the task is to get from point A to point B, not to _walk_ there specifically. 
