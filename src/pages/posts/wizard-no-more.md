@@ -24,7 +24,7 @@ the coding part means the magic is disappearing.
 __Harry, nobody cares if you are a wizard anymore.__ The secret knowledge and the magic spells have been automated.
 Better focus on the outcomes, or look for a muggle profession if you can't get with the program, for the times, they are a-changin'.
 
-I feel like the bar pianist who's been given an piano that can play any song, provided you explain to it well enough what you want from it.
+I feel like the bar pianist who's been given a piano that can play any song, provided you explain to it well enough what you want from it.
 Sure, the job was never about the specific notes or chords you played – it was about entertaining the guests of the establishment.
 Some folks would be overjoyed to be able to lean back and take the role of a glorified playlist editor, without having to
 mess with the nitty-gritty details of hitting the keys on the keyboard. Surely, this super piano is much more efficient
@@ -35,4 +35,3 @@ And yet, for someone who actually loved playing the piano and cherised the skill
 this is not a tool that makes their job easier or quicker. This is something that strips them of the very thing that makes them who they are.
 
 And for this reason, I'm currently mourning.  
-The line, it is drawn, the curse, it is cast.
