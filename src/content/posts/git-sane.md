@@ -2,7 +2,6 @@
 title: Better git command names
 pubDate: 2022-05-17
 excerpt: Getting comfortable with git is famously challenging, and I do believe part of this is that git commands are named very poorly.
-layout: ../../layouts/BlogPost.astro
 ---
 
 ## Presentation

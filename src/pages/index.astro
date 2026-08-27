@@ -1,21 +1,17 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
-import type { MarkdownLayoutProps } from "astro";
+import { getCollection, type CollectionEntry } from "astro:content";
 
-type Post = MarkdownLayoutProps<{
-  title: string;
-  pubDate: string;
-  excerpt: string;
-  isDraft?: true;
-}>;
+type Post = CollectionEntry<"posts">;
 
 function comparePostsByPublishDate(a: Post, b: Post) {
-  return new Date(b.frontmatter.pubDate).valueOf() - new Date(a.frontmatter.pubDate).valueOf();
+  return b.data.pubDate.valueOf() - a.data.pubDate.valueOf();
 }
 
-const unsortedPosts: Post[] = await Astro.glob("./posts/*.{md,mdx}");
-const sortedPosts = unsortedPosts.sort(comparePostsByPublishDate);
-const publishedPosts = sortedPosts.filter(post => !post.frontmatter.isDraft)
+const allPosts = await getCollection("posts");
+const publishedPosts = allPosts
+  .filter((post) => !post.data.isDraft)
+  .sort(comparePostsByPublishDate);
 ---
 
 <BaseLayout>
@@ -23,9 +19,9 @@ const publishedPosts = sortedPosts.filter(post => !post.frontmatter.isDraft)
     publishedPosts.map((post) => (
       <div class="post">
         <h3>
-          <a href={post.url}>{post.frontmatter.title}</a>
+          <a href={`/posts/${post.id}`}>{post.data.title}</a>
         </h3>
-        <aside>{post.frontmatter.excerpt}</aside>
+        <aside>{post.data.excerpt}</aside>
       </div>
     ))
   }

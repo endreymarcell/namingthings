@@ -2,17 +2,13 @@
 import BaseLayout from "./BaseLayout.astro";
 
 export interface Props {
-  content: {
-    title: string;
-    excerpt: string;
-    pubDate?: string;
-    heroImage?: string;
-  };
+  title: string;
+  excerpt?: string;
+  pubDate?: Date;
+  heroImage?: string;
 }
 
-const {
-  content: { title, pubDate, heroImage },
-} = Astro.props;
+const { title, pubDate, heroImage } = Astro.props;
 ---
 
 <BaseLayout pageTitle={title}>
@@ -22,7 +18,7 @@ const {
     {
       pubDate && (
         <time>
-          <strong>Published:</strong> {pubDate.substring(0, 10)}
+          <strong>Published:</strong> {pubDate.toISOString().slice(0, 10)}
         </time>
       )
     }

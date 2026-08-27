@@ -2,7 +2,6 @@
 title: Tailwind is the death of CSS
 pubDate: 2023-09-11
 excerpt: The popularity of Tailwind might be a sign of just how misguided CSS itself is.
-layout: ../../layouts/BlogPost.astro
 ---
 
 Tailwind is intensely debated, and I'm not going to try to add to that noise here.

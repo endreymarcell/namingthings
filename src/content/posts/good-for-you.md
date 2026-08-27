@@ -2,7 +2,6 @@
 title: Just because you like it doesn't mean it's good for you
 pubDate: 2022-05-15
 excerpt: Most of what can be said about remote work and returning to the office has been said already; there's one point I'd like to make that I haven't seen represented.
-layout: ../../layouts/BlogPost.astro
 ---
 
 Most of what can be said about remote work and returning to the office has been said already; there's one point I'd like

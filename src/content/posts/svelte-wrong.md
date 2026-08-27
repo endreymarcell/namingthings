@@ -2,7 +2,7 @@
 title: What Svelte got wrong
 pubDate: 2022-07-13
 excerpt: Just like many other folks, I quite enjoy using Svelte. Nevertheless, there are parts of the syntax where I respectfully disagree with the choices the team took.
-layout: ../../layouts/BlogPost.astro
+isDraft: true
 ---
 
 Just like [many other folks](https://www.reddit.com/r/sveltejs/comments/owmnbr/svelte_is_stackoverflows_most_loved_web_framework/), I quite enjoy using Svelte - heck, even this page is running on SvelteKit!

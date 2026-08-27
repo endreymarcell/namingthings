@@ -2,7 +2,6 @@
 title: "Pet peeve: adding up time"
 pubDate: 2022-08-21
 excerpt: The curios case of 2 + 2 not being equal to 4
-layout: ../../layouts/BlogPost.astro
 ---
 
 One of my pet peeves is the type of argument about saving time

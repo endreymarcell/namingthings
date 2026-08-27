@@ -2,7 +2,6 @@
 title: Life after React - Svelte and friends (🇭🇺)
 pubDate: 2022-12-29
 excerpt: I gave a short talk about some frontend frameworks at HWSW.hu's online event.
-layout: ../../layouts/BlogPost.astro
 ---
 
 ## Presentation

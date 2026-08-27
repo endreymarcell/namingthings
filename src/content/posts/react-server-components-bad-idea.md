@@ -2,7 +2,6 @@
 title: If an implementation is hard to explain, it's a bad idea.
 pubDate: 2023-09-13
 excerpt: Musings on React Server Components
-layout: ../../layouts/BlogPost.astro
 ---
 
 I'm so fond of this particular line from [the Zen of Python](https://peps.python.org/pep-0020/) that I'm listing it on [my Quotes page](/quotes) as well.

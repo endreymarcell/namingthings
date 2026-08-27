@@ -2,7 +2,6 @@
 title: DuckDuck... Go away.
 pubDate: 2025-06-13
 excerpt: You either die a hero, or live long enough to see yourself become the villain, eh?
-layout: ../../layouts/BlogPost.astro
 ---
 
 The other day, I wanted to look up some Twilio documentation, so I searched for "twilio taskrouter".  

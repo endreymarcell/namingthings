@@ -2,7 +2,6 @@
 title: Introducing effin-redux
 pubDate: 2023-10-14
 excerpt: Yet another side effect handling library for redux
-layout: ../../layouts/BlogPost.astro
 ---
 
 We used to have a running joke in Prezi that nobody was a proper senior frontend developer until they've rolled

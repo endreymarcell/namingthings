@@ -2,5 +2,8 @@
 node_modules
 /build
 /package
+dist
+.astro
 .idea
 .vscode
+.claude/settings.local.json

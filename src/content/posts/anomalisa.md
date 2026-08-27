@@ -2,7 +2,6 @@
 title: Anomalisa
 pubDate: 2026-08-27
 excerpt: When you outsource your voice to AI.
-layout: ../../layouts/BlogPost.astro
 ---
 
 I have had a couple of eerie experiences recently.  

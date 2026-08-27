@@ -2,7 +2,7 @@
 title: Get your AI out of my face
 pubDate: 2025-03-13
 excerpt: Look, it's Clippy again! Only with more rainbow gradients and sparkle emojis.
-layout: ../../layouts/BlogPost.astro
+isDraft: true
 ---
 
 Yes, I selected a passage of text in this document.
