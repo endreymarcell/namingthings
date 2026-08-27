@@ -39,3 +39,9 @@ My car mechanic solves problems. The dentist solves problems. [The Wolf](https:/
 
 So don't tell me the job was not to write code.  
 It was in the job description. It was on the interview. It was what we all were doing in a large portion of the time. __Of course the job was to write code.__ It was lots of other things too, sure, but dismissing someone's lament about losing the coding portion of the job by saying the job is to solve problems is like telling an amputee they have nothing to be disappointed about because the task is to get from point A to point B, not to _walk_ there specifically. 
+
+---
+
+> But you are OK with me using Grammarly to correct my mistakes, so is it not OK to have AI write the text based on my ideas? Where do you draw the line?
+
+Here's the thing: just because the middle section of a gradient is murky and there's no way to draw a definitive line separating black from white, there are still areas towards the ends that are clearly much more white than black or vica versa.
