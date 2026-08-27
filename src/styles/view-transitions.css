@@ -1,0 +1,61 @@
+/* Astro's compiler auto-injects astro/components/viewtransitions.css because we use
+   transition:* directives. That file provides the astroFadeIn/astroFadeOut keyframes and a
+   global prefers-reduced-motion guard, so neither is repeated here. */
+
+/* Default: very quick cross-fade between the top-level pages.
+   Keeps the browser's built-in root fade keyframes, only speeds them up. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation-duration: 120ms;
+  animation-timing-function: ease;
+}
+
+/* The header and footer are identical on every page, so pin them in place while the content
+   moves. `transition:name` alone already fades old/new; killing the group animation stops any
+   geometry morph. */
+::view-transition-group(site-header),
+::view-transition-group(site-footer) {
+  animation: none;
+}
+
+/* Entering a post: the content slides in from the right. */
+html[data-astro-transition="entering-post"]::view-transition-old(root) {
+  animation: 280ms cubic-bezier(0.76, 0, 0.24, 1) both slide-out-to-left;
+}
+
+html[data-astro-transition="entering-post"]::view-transition-new(root) {
+  animation: 280ms cubic-bezier(0.76, 0, 0.24, 1) both slide-in-from-right;
+}
+
+/* Leaving a post: the content slides back in from the left. */
+html[data-astro-transition="leaving-post"]::view-transition-old(root) {
+  animation: 280ms cubic-bezier(0.76, 0, 0.24, 1) both slide-out-to-right;
+}
+
+html[data-astro-transition="leaving-post"]::view-transition-new(root) {
+  animation: 280ms cubic-bezier(0.76, 0, 0.24, 1) both slide-in-from-left;
+}
+
+@keyframes slide-in-from-right {
+  from {
+    transform: translateX(100vw);
+  }
+}
+
+@keyframes slide-out-to-left {
+  to {
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes slide-in-from-left {
+  from {
+    transform: translateX(-100vw);
+  }
+}
+
+@keyframes slide-out-to-right {
+  to {
+    transform: translateX(100vw);
+  }
+}

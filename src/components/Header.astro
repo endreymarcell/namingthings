@@ -3,7 +3,7 @@ import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../config";
 ---
 
-<header>
+<header transition:name="site-header">
   <h2>
     <a href="/">{SITE_TITLE}</a>
   </h2>

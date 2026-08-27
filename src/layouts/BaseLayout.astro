@@ -2,6 +2,7 @@
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
+import { ClientRouter } from "astro:transitions";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../config";
 
 export interface Props {
@@ -17,6 +18,34 @@ const title = Astro.props.pageTitle
 <html lang="en">
   <head>
     <BaseHead title={title} description={SITE_DESCRIPTION} />
+    <ClientRouter />
+    <script>
+      const ENTERING_POST = "entering-post";
+      const LEAVING_POST = "leaving-post";
+      const CROSS_FADE = "cross-fade";
+
+      function isPostUrl(url: URL) {
+        return url.pathname.startsWith("/posts/");
+      }
+
+      function getTransitionDirection(from: URL, to: URL) {
+        const isEnteringPost = !isPostUrl(from) && isPostUrl(to);
+        if (isEnteringPost) {
+          return ENTERING_POST;
+        }
+
+        const isLeavingPost = isPostUrl(from) && !isPostUrl(to);
+        if (isLeavingPost) {
+          return LEAVING_POST;
+        }
+
+        return CROSS_FADE;
+      }
+
+      document.addEventListener("astro:before-preparation", (event) => {
+        event.direction = getTransitionDirection(event.from, event.to);
+      });
+    </script>
     <style>
       #main-layout {
         display: grid;
