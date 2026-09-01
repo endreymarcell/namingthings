@@ -15,21 +15,34 @@ const publishedPosts = allPosts
 ---
 
 <BaseLayout>
-  {
-    publishedPosts.map((post) => (
-      <div class="post">
-        <h3>
-          <a href={`/posts/${post.id}`}>{post.data.title}</a>
-        </h3>
-        <aside>{post.data.excerpt}</aside>
-      </div>
-    ))
-  }
+  <div class="posts">
+    {
+      publishedPosts.map((post) => (
+        <div class="post">
+          <h3>
+            <a href={`/posts/${post.id}`}>{post.data.title}</a>
+          </h3>
+          <aside>{post.data.excerpt}</aside>
+        </div>
+      ))
+    }
+  </div>
 </BaseLayout>
 
 <style>
   div.post {
     margin-bottom: 3rem;
+    transition: opacity 150ms ease;
+  }
+
+  .posts:focus-within div.post:not(:focus-within) {
+    opacity: 0.1;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    div.post {
+      transition: none;
+    }
   }
 
   h3 {
