@@ -2,6 +2,7 @@
 title: A truly awful name for a function
 pubDate: 2022-11-13
 excerpt: "RFC: first-class support for confusion in React"
+isDraft: true
 ---
 
 I still haven't managed to get over my astonishment that this [planned new React hook](https://github.com/acdlite/rfcs/blob/first-class-promises/text/0000-first-class-support-for-promises.md) is called `use()`. Did anyone really think this was a good idea?

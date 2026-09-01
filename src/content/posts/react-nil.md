@@ -2,6 +2,7 @@
 title: react-nil makes nil sense to me
 pubDate: 2025-01-19
 excerpt: I'm dumbfounded by this library.
+isDraft: true
 ---
 
 So there's this library called [react-nil](https://github.com/pmndrs/react-nil) that allows you to use React components
