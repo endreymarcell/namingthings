@@ -48,7 +48,7 @@ When called out on the AI usage, the usual response of these people are:
 - AI helps me make sure I communicate my thoughts clearly and precisely;
 - and the ideas are still mine, I came up with those, not the AI.
 
-Valid as these points may be, stripping the individual communication style of people is just inhumane to me.
+Valid as these points may be, stripping away the individual communication style of people is just inhumane to me.
 The way you express yourself, messy and imperfect as it is, is part of who you are and how you connect with others.
 If a polished communication style becomes commoditized, it also becomes meaningless.
 
