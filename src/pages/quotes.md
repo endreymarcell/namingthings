@@ -10,6 +10,9 @@ This page contains a list of quotes I am fond of. They should give you a good id
 
 ## Programming
 
+⚠️ __Side note__ added in 2026: these reflect the state of affairs before AI started writing code in place of humans.
+It's an open question how much they are still relevant in this brave new world.
+
 > There are only two hard things in Computer Science: cache invalidation and naming things.
 
 I named my blog based on this quip that Phil Karlton was [throwing around while working on Netscape](https://www.karlton.org/2017/12/naming-things-hard).
