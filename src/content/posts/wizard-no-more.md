@@ -1,7 +1,7 @@
 ---
 title: You're no longer a wizard, Harry
 pubDate: 2026-03-20
-excerpt: Or more precisely, nobody cares anymore. My feelings about AI.
+excerpt: Or more precisely, nobody cares anymore. My feelings about coding via agentic AI.
 ---
 
 [Matt Pocock](https://www.youtube.com/@mattpocockuk), the TypeScript educator whose great YouTube videos I watched from time to time,
