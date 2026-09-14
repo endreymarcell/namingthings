@@ -17,7 +17,7 @@ I think a lot about how to best approach software engineering.
 
 ## About Naming Things
 
-I started this blog to share my professional opinion on a number of topics related to software engineering in the hope
-of helping others with less experience or a different background.
+I started this blog in 2022 to share my professional opinion on a number of topics related to software engineering
+in the hope of helping others with less experience or a different background.
 
 The blog is currently built with [Astro](https://astro.build/), and deployed to [Vercel](https://vercel.com/).
