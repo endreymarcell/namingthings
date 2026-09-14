@@ -2,6 +2,7 @@
 title: Further musings on AI
 pubDate: 2026-05-27
 excerpt: An unorganized collection of thoughts on what I see around me in the software space.
+isDraft: true
 ---
 
 __When there's a hammer in your hand, everything looks like a nail.__
