@@ -29,13 +29,40 @@ const publishedPosts = allPosts
   </div>
 </BaseLayout>
 
+<script>
+  const POSTS_CONTAINER_SELECTOR = ".posts";
+  const NAVIGATING_CLASS = "is-navigating";
+  const ACTIVE_POST_CLASS = "is-active";
+
+  document.addEventListener("click", (event) => {
+    const target = event.target as HTMLElement | null;
+    const link = target?.closest("a");
+    if (!link) return;
+
+    const postsContainer = link.closest(POSTS_CONTAINER_SELECTOR);
+    if (!postsContainer) return;
+
+    const isModifiedClick =
+      event.metaKey ||
+      event.ctrlKey ||
+      event.shiftKey ||
+      event.altKey ||
+      event.button !== 0;
+    if (isModifiedClick) return;
+
+    const post = link.closest(".post");
+    postsContainer.classList.add(NAVIGATING_CLASS);
+    post?.classList.add(ACTIVE_POST_CLASS);
+  });
+</script>
+
 <style>
   div.post {
     margin-bottom: 3rem;
     transition: opacity 150ms ease;
   }
 
-  .posts:focus-within div.post:not(:focus-within) {
+  .posts.is-navigating div.post:not(.is-active) {
     opacity: 0.1;
   }
 
