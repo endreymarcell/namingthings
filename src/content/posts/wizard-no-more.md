@@ -1,7 +1,7 @@
 ---
 title: You're no longer a wizard, Harry
 pubDate: 2026-03-20
-excerpt: Or more precisely, nobody cares anymore. My feelings about coding via agentic AI.
+excerpt: Or more precisely, nobody cares anymore. My feelings about agentic AI taking over the coding part of software engineering.
 ---
 
 [Matt Pocock](https://www.youtube.com/@mattpocockuk), the TypeScript educator whose great YouTube videos I watched from time to time,
@@ -21,7 +21,7 @@ to allow our teams to build codebases that perform well, scale well, and stay ma
 the coding part means the magic is disappearing.
 
 __Harry, nobody cares if you are a wizard anymore.__ The secret knowledge and the magic spells have been automated.
-Better focus on the outcomes, or look for a muggle profession if you can't get with the program, for the times, they are a-changin'.
+Better focus on the outcomes, or look for a muggle profession if you can't get with the program, [for the times, they are a-changin'](https://www.youtube.com/watch?v=90WD_ats6eE).
 
 I feel like the bar pianist who's been given a piano that can play any song, provided you explain to it well enough what you want from it.
 Sure, the job was never about the specific notes or chords you played – it was about entertaining the guests of the establishment.
