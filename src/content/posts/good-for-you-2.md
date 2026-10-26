@@ -2,6 +2,7 @@
 title: Just because you like it doesn't mean it's good for you - AI edition
 pubDate: 2026-05-12
 excerpt: My current stance on AI.
+isDraft: true
 ---
 
 My very first post on this blog was about remote work.
