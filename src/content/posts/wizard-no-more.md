@@ -17,10 +17,10 @@ And the "What's up, Wizards?" intro has been gone from his videos. It's now eith
 With GenAI, we don't need wizards anymore. Claude will take care of the types, you just focus on the system design
 and the rest of the higher-level stuff. And sure, that's always been a critical part of the job on a senior level.
 But for someone like me for whom the actual coding part was a source of joy, as well as an important contributing factor
-to allow our teams to build codebases that perform well, scale well, and stay maintainable, the fact that AI is phasing out
+to allow my team to build codebases that perform well, scale well, and stay maintainable, the fact that AI is phasing out
 the coding part means the magic is disappearing.
 
-__Harry, nobody cares if you are a wizard anymore.__ The secret knowledge and the magic spells have been automated.
+__Harry, nobody cares anymore if you are a wizard.__ The secret knowledge and the magic spells have been automated.
 Better focus on the outcomes, or look for a muggle profession if you can't get with the program, [for the times, they are a-changin'](https://www.youtube.com/watch?v=90WD_ats6eE).
 
 I feel like the bar pianist who's been given a piano that can play any song, provided you explain to it well enough what you want from it.
