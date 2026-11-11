@@ -66,6 +66,15 @@ simply true or false. This one comes from my mom, although it's also generally k
 General wisdom.
 -->
 
+## AI
+
+> Never trust anything that can think for itself if you can't see where it keeps its brain
+
+Arthur Weasley's words to his daughter, Jinny, in J. K. Rowling's Harry Potter and the Chamber of Secrets.
+When applied to AI it's not so much about not trusting it, it's more about regularly reminding ourselves that
+the way AI communicates with us is very human-like, tricking us into believing it _is_ human-like and then
+getting very surprised when it fails in very non-human-like ways.
+
 </div>
 
 <style>
