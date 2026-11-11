@@ -56,8 +56,11 @@ Charlie Kafuman's wonderful movie [Anomalisa](https://www.imdb.com/title/tt24018
 In this stop-motion movie, every character is voiced by the same actor, and it's really creepy.
 So much so that as soon as the man meets someone who has a different voice, he instantly falls in love.
 
-This is the future we're looking at if having our answers formulated by AI becomes the norm.
-We're all just artificially enhanced — and simultaneously anonymised — personas,
+Where do we draw the line though? Is Grammarly still OK, but rephrasing your text with ChatGPT not?
+(See [Kevin Powerll ruminating](https://www.youtube.com/watch?v=Txx4T6oIpUo) about the same question.)
+
+I fear a future in which having our answers formulated by AI becomes the norm;
+where we're all just artificially enhanced — and simultaneously anonymised — personas,
 holding on to "hey, but the _ideas_ are mine!" for dear life.
 
 (At least until we start using AI to brainstorm our ideas too, retreating to "hey, but the _feelings_ are mine!"...)
